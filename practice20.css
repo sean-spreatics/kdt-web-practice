@@ -1,0 +1,66 @@
+/* 1. 기본 태그 설정 */
+body {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  margin-left: 16px;
+  color: black;
+}
+
+header {
+  background-color: pink;
+  height: 100px;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 2. header 설정 */
+.icon-menu {
+  font-size: 32px;
+  display: block;
+}
+
+.list-menu {
+  display: none;
+}
+
+/* 3. toggle-menu 설정 */
+.toggle-menu {
+  background-color: gold;
+  display: block;
+  padding: 0 2rem;
+}
+
+.toggle-menu-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.toggle-menu-container > a {
+  margin: 12px 0;
+}
+
+.d-none {
+  display: none;
+}
+
+/* width >= 992px */
+@media screen and (min-width: 992px) {
+  /* 2. header 설정 */
+  .icon-menu {
+    display: none;
+  }
+
+  .list-menu {
+    display: block;
+  }
+
+  /* 4. toggle-menu 연 상태에서 width 넓히면 여전히 open 되어 있으므로 none 처리 */
+  .toggle-menu {
+    display: none;
+  }
+}

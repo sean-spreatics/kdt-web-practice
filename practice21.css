@@ -1,0 +1,22 @@
+.parent {
+    display: flex;
+}
+
+.child {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: black;
+    margin: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .parent {
+        flex-direction: column;
+    }
+
+    .child {
+        background-color: skyblue;
+    }
+}

@@ -1,0 +1,100 @@
+/* common */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+h1, p {
+    margin: 0;
+}
+
+p {
+    text-align: justify;
+}
+
+.card-list {
+    width: 80%;
+    
+    display: flex;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 40px 30px;
+
+    display: flex;
+    align-items: center;
+}
+
+.card:nth-child(odd) {
+    flex-direction: column;
+}
+
+.card:nth-child(odd) .title {
+    margin-top: 20px;
+}
+
+.card:nth-child(even) {
+    flex-direction: column-reverse;
+}
+
+.card:nth-child(even) .caption {
+    margin-bottom: 20px;
+}
+
+.card > img {
+    width: 100%;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+}
+
+.card .title {
+    font-size: 24px;
+    font-weight: 700px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-50px);
+    cursor: pointer;
+    box-shadow: 12px 12px 20px #ffffff75;
+}
+
+.card:hover .title {
+    font-style: italic;
+}
+
+#kiwoom:hover .title {
+    color: #820024;
+}
+
+#lotte:hover .title {
+    color: #002955;
+}
+
+#lg:hover .title {
+    color: #C30452;
+}
+
+#hanwha:hover .title {
+    color: #FF6600;
+}
+

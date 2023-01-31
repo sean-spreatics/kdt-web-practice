@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습14. 2 또는 3의 배수 총합 구하기</title>
+  </head>
+  <body>
+    <h1>실습14. 2 또는 3의 배수 총합 구하기</h1>
+    <p>
+      정수 n이 있을 때 2또는 3의 배수의 총합을 구하시오. (단, n은 0 < n < 100 )
+    </p>
+
+    <script>
+      let sum = 0;
+      for (let n = 1; n < 100; n++) {
+        if (n % 2 === 0 || n % 3 === 0) {
+          sum = sum + n;
+        }
+      }
+
+      console.log(`1과 99까지 중에서 2 또는 3의 배수의 합: ${sum}`);
+    </script>
+  </body>
+</html>

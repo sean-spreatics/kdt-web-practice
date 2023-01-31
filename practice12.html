@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습12. js 변수와 함수</title>
+  </head>
+  <body>
+    <h1>실습12. 변수와 함수 사용하기</h1>
+    <ol>
+      <li>no_1, no_2, no_3 이라는 3개의 변수를 선언하고, 각각 숫자 할당하기</li>
+      <li>
+        no_1, no_2, no_3의 합계를 console에 출력하고, alert로 출력하는 add 함수
+        만들기
+      </li>
+      <li>
+        no_1과 no_2의 차이를 console에 출력하고, alert로 출력하는 sub 함수
+        만들기
+      </li>
+      <li>
+        no_1에서 no_2를 나눈 값을 console에 출력하고, alert로 출력하는 divide
+        함수 만들기
+      </li>
+      <li>
+        no_1과 no_2의 곱을 alert로 출력하는 console에 출력하고, mul 함수 만들기
+      </li>
+    </ol>
+
+    <script>
+      // 12-1
+      // let no_1, no_2, no_3;
+      // no_1 = 1;
+      // no_2 = 2;
+      // no_3 = 3;
+      let no_1 = 1;
+      let no_2 = 2;
+      let no_3 = 3;
+      console.log(`no_1 = ${no_1}`);
+      console.log(`no_2 = ${no_2}`);
+      console.log(`no_3 = ${no_3}`);
+
+      // 12-2
+      function add(x, y, z) {
+        let result = x + y + z;
+        console.log(`no_1 + no_2 + no_3 = ${result}`);
+        alert(result);
+      }
+      add(no_1, no_2, no_3);
+
+      // 12-3
+      function sub(x, y) {
+        let result = x - y;
+        console.log(`no_1 - no_2 = ${result}`);
+        alert(result);
+      }
+      sub(no_1, no_2);
+
+      // 12-4
+      const divide = function (x, y) {
+        let result = x / y;
+        console.log(`no_1 / no_2 = ${result}`);
+        alert(result);
+      };
+      divide(no_1, no_2);
+
+      // 12-5
+      const mul = function (x, y) {
+        let result = x * y;
+        console.log(`no_1 * no_2 = ${result}`);
+        alert(result);
+      };
+      mul(no_1, no_2);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member</title>
+
+    <!-- TODO: Google Font 불러오기 (폰트명: Orbitron)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- TODO: CSS 파일 불러오기 -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/d15cbbf71d.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="member_3">
+    <section class="wrap">
+        <article class="profile">
+            <!-- TODO: img 태그의 src 속성값 채우기 -->
+            <img src="./img/member_3.png" alt="멤버 2 프로필 이미지">
+            <h1>Loopy</h1>
+            <p>Frontend developer<br>Queen of cooking</p>
+            <a href="#" class="btnView">View More</a>
+        </article>
+
+        <ul class="contact">
+            <li>
+                <a href="#">
+                    <i class="fab fa-github"></i>
+                    <span>visit my GitHub</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-envelope"></i>
+                    <span>loopy@kdt.com</span>
+                </a>
+            </li>
+        </ul>
+
+        <nav class="others">
+            <!-- TODO: a 태그의 href 속성값 채우기 -->
+            <!-- HINT: 인터넷 URL 주소 외에도 상대경로를 이용해 또 다른 html 파일을 연결할 수 있어요! -->
+            <!-- TODO: class속성에 적용된 on 값을 이용해 버튼이 클릭되면 a 태그 요소가 회색 -> 주황/파랑/분홍으로 바뀌도록 변경하기 -->
+            <!-- HINT: index.html은 첫번째 a 태그에만 class 속성으로 on 이 선언되었어요! 즉, "a 태그이자 클래스명으로 on을 갖는 첫번째 요소"에 배경 색이 변경되었어요 -->
+            <a href="./index.html"></a>
+            <a href="./member_2.html"></a>
+            <a href="./member_3.html" class="on"></a>
+        </nav>
+    </section>
+</body>
+
+</html>

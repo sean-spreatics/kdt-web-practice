@@ -1,0 +1,176 @@
+/* COMMON */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+a:visited {
+  color: #555;
+}
+
+body {
+  background-color: rgba(252, 229, 188, 0.7);
+}
+
+/* SECTION.WRAP */
+.wrap {
+  width: 340px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+
+  /* 다음 시간에 배우게 될 속성입니다 :) 카드를 body 태그의 정가운데 배치하는 코드예요. */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ARTICLE.PROFILE */
+.wrap .profile {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.wrap .profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 5px 15px 30px rgba(255, 165, 0, 0.5);
+}
+
+.wrap .profile h1 {
+  font-weight: bold;
+  font-size: 22px;
+  color: #555;
+  margin: 20px 0px 10px 0px;
+}
+
+.wrap .profile p {
+  font-size: 14px;
+  line-height: 1;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.wrap .profile .btnView {
+  display: block;
+  width: 180px;
+  height: 32px;
+  margin: 0px auto 20px;
+  /* background: linear-gradient(45deg, rgb(255, 178, 35), rgb(255, 166, 0)); */
+  background:rgb(255, 178, 35);
+  box-shadow: 5px 10px 20px rgba(255, 166, 0, 0.4);
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 32px;
+
+  color: white;
+  border-radius: 16px;
+}
+
+/* UL.CONTACT */
+.wrap .contact {
+  margin-bottom: 25px;
+}
+
+.wrap .contact li {
+  width: 100%;
+  padding: 10px 0px;
+  border-bottom: 1px solid #ddd;
+}
+
+.wrap .contact li:last-child {
+  border-bottom: none;
+}
+
+.wrap .contact li i {
+  /* width: 20%; */
+  /* text-align: center; */
+  margin: 0 20px;
+  color: #555;
+  font-size: 15px;
+  text-shadow: 2px 2px 2px #ddd;
+}
+
+.wrap .contact li span {
+  font-size: 13px;
+}
+
+.wrap .others {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wrap .others a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0px 10px;
+}
+
+.wrap .others a.on:nth-of-type(1) {
+  background-color: orange;
+  box-shadow: 5px 5px 10px rgb(255, 165, 0, 0.5);
+}
+
+.wrap .others a.on:nth-of-type(2) {
+  background-color: rgb(0, 183, 255);
+  box-shadow: 5px 5px 10px rgb(0, 183, 255, 0.5);
+}
+
+.wrap .others a.on:nth-of-type(3) {
+  background-color: hotpink;
+  box-shadow: 5px 5px 10px rgba(255, 105, 180, 0.5);
+}
+
+/* HINT: index.html 먼저 완성한 후, member_2.html, member_3.html에서 변경되는 css 속성(ex. 배경색 등)을 아래에 추가해주세요! */
+/* MEMBER_2 CUSTOM */
+.member_2 {
+  background-color: lightcyan;
+}
+
+.member_2 .wrap .profile img {
+  box-shadow: 5px 15px 30px rgba(147, 221, 250, 0.8);
+}
+
+.member_2 .wrap .profile .btnView {
+  /* background: linear-gradient(45deg, rgb(0, 183, 255), #3c92f3); */
+  background:rgb(0, 183, 255);
+  box-shadow: 5px 10px 20px rgba(0, 253, 253, 0.4);
+}
+
+/* MEMBER_3 CUSTOM */
+.member_3 {
+  background-color: rgb(255, 231, 243);
+}
+
+.member_3 .wrap .profile img {
+  box-shadow: 5px 15px 30px rgba(255, 105, 180, 0.5);
+}
+
+.member_3 .wrap .profile .btnView {
+  /* background: linear-gradient(45deg, rgb(255, 132, 194), rgb(255, 105, 180)); */
+  background:rgb(255, 132, 194);
+  box-shadow: 5px 10px 20px rgba(255, 105, 180, 0.4);
+}

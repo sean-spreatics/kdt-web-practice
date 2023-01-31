@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습13. 구구단 만들기</title>
+</head>
+<body>
+    <h1>실습13. 구구단을 외자~</h1>
+    <p>콘솔 창에 구구단 2~9단 띄우기</p>
+    
+    <script>
+        for (let i = 2; i < 10; i++) {
+            console.log(`==== ${i} 단 ====`);
+            for (let j = 1; j < 11; j ++) {
+                // ver. 템플릿 리터럴
+                console.log(`${i} * ${j} = ${i * j}`);
+
+                // ver. 문자열 연결
+                // console.log(i + ' * ' + j + ' = ' + i * j);
+            }
+        }
+    </script>
+</body>
+</html>

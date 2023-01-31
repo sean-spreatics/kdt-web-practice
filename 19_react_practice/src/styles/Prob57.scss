@@ -1,0 +1,79 @@
+// 힌트: https://stackoverflow.com/questions/40183991/create-a-sass-mixin-for-animation
+$color-pink: pink;
+$color-yellow: yellow;
+$color-green: green;
+
+@mixin circle($color) {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: $color;
+}
+
+@mixin animation-rotate($name, $size) {
+  @keyframes #{$name} {
+    0% {
+      top: 0;
+      left: 0;
+    }
+
+    25% {
+      top: 0;
+      left: $size;
+    }
+
+    50% {
+      top: $size;
+      left: $size;
+    }
+
+    75% {
+      top: $size;
+      left: 0;
+    }
+
+    100% {
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+// @mixin animation-mixin($name, $from, $to) {
+//   @keyframes #{$name} {
+//     0% {
+//       transform: translate3d($from, 0, 0);
+//       opacity: 0;
+//     }
+//     100% {
+//       transform: translate3d($to, 0, 0);
+//       opacity: 1;
+//     }
+//   }
+// }
+
+.circles {
+  .circle {
+    position: relative;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    &.pink {
+      @include circle($color-pink);
+      @include animation-rotate(pinkAnim, 100px);
+      animation-name: pinkAnim;
+    }
+
+    &.yellow {
+      @include circle($color-yellow);
+      @include animation-rotate(yellowAnim, 200px);
+      animation-name: yellowAnim;
+    }
+
+    &.green {
+      @include circle($color-green);
+      @include animation-rotate(greenAnim, 300px);
+      animation-name: greenAnim;
+    }
+  }
+}
